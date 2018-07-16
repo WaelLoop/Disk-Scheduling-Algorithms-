@@ -14,18 +14,6 @@ int cmpfunc (const void * a, const void * b) {
    return ( *(int*)a - *(int*)b );
 }
 
-//function to swap 2 integers
-void swap(int *a, int *b)
-{
-    if (*a != *b)
-    {
-        *a = (*a ^ *b);
-        *b = (*a ^ *b);
-        *a = (*a ^ *b);
-        return;
-    }
-}
-
 //Prints the sequence and the performance metric
 void printSeqNPerformance(int *request, int numRequest)
 {
